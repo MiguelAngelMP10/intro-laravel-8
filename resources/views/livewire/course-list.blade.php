@@ -3,7 +3,7 @@
     @foreach ($courses as $key => $course)
         <div class="bg-white shadow-lg rounded-lg px-4 py-6 text-center">
 
-            <a href="{{ route('course') }}">
+            <a href="{{ route('course', $course->slug) }}">
                 <img class="rounded-md mb-2" src="{{ $course->img }}" alt="">
                 <h2 class="text-lg text-gray-600 truncate uppercase">{{ $course->name }}</h2>
                 <h3 class="tex-md text-gray-500">{{ $course->excerpt }}</h3>
